@@ -16,7 +16,7 @@ jobs:
       - name: Deploy on lambda
         uses: actions/setup-python@v2
         with:
-          python-version: 3.9
+          python-version: 3.11
 
       - name: Zip files
         run: zip -r lambda_function.zip ./*
