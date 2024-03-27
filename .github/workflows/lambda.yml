@@ -1,0 +1,16 @@
+name: Deploy Lambda on AWS
+
+on:
+  push:
+    branches:
+      - master  # Adjust this to match your main branch
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy on lambda
